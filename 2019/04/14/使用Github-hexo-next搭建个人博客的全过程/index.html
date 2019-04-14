@@ -126,7 +126,7 @@
 <meta property="og:image" content="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/初始界面.png">
 <meta property="og:image" content="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/next初始化.png">
 <meta property="og:image" content="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/githubSSH.png">
-<meta property="og:updated_time" content="2019-04-14T08:38:25.068Z">
+<meta property="og:updated_time" content="2019-04-14T08:45:04.874Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Github+hexo+next搭建个人博客的全过程">
 <meta name="twitter:description" content="搭建过程本次搭建Hexo使用的本地环境如下：   Windows 10 node v10.15.3 -x64 git version2.20.1.windows.1 hexo v3.8.0 next v6.0.0   准备软件的安装Node.js  打开Node.js官网(http://nodejs.org)，我们就能看见如下的安装界面：    点击左面的按钮(10.15.3LTS)，下载 nod">
@@ -443,7 +443,7 @@
                 
               
 
-              <time title="创建时间：2019-04-14 13:35:34 / 修改时间：16:38:25" itemprop="dateCreated datePublished" datetime="2019-04-14T13:35:34+08:00">2019-04-14</time>
+              <time title="创建时间：2019-04-14 13:35:34 / 修改时间：16:45:04" itemprop="dateCreated datePublished" datetime="2019-04-14T13:35:34+08:00">2019-04-14</time>
             
 
             
@@ -570,6 +570,7 @@
 <h2 id="编辑整站配置文件"><a href="#编辑整站配置文件" class="headerlink" title="编辑整站配置文件"></a>编辑整站配置文件</h2><p>打开博客主目录文件夹下的 <code>_config.yml</code> ，用编辑器打开它，搜索 <code>deploy</code>，把刚刚复制的 SSH码粘贴到repository：后面，别忘了冒号后要空一格。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:jiyali/JiYali.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
 <h2 id="执行下列指令即可完成部署"><a href="#执行下列指令即可完成部署" class="headerlink" title="执行下列指令即可完成部署"></a>执行下列指令即可完成部署</h2><p>Git Bash 依次输入下方命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></p>
 <p>【提示】如果在配置 SSH key 时设置了密码，执行 hexo d 命令上传文件时需要输入密码进行确认<br>输入密码之后在浏览器输入：username.github.io<br>Surprise🎉！恭喜你~<br>现在你已经拥有自己的一个小空间啦~</p>
+<p>我的文章将持续更新在我的 <a href="https://jiyali.github.io/" target="_blank" rel="noopener">https://jiyali.github.io/</a> 里<br>任何疑问请在下方留言，也将在下一期教如何制作留言板和写博客等内容~<br>敬请期待~❤</p>
 
       
     </div>
