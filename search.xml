@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[使用nolup后台运行python脚本]]></title>
+    <url>%2F2019%2F05%2F26%2F%E4%BD%BF%E7%94%A8nolup%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8Cpython%E8%84%9A%E6%9C%AC%2F</url>
+    <content type="text"><![CDATA[本地连接服务器训练一个机器学习或者深度学习模型的时候，需要花很长时间才能训练出一个结果，但是在这个过程中本地的ssh连接很容易就断开了，这时在服务器上跑的程序也就跟着断掉了，这个时候就非常非常需要后台运行训练程序。 先记录一下使用nolup解决这个问题的过程 因为服务器多人在使用，所以在进入正题之前还是需要先激活环境：source 环境名/bin/activate 打开程序所在文件夹：cd 某文件夹 接下来进入正题，使用nolup： 在上述步骤结束之后，继续输入： nolup python -u 程序名.py &gt; /日志路径 日志名.log 2&gt;&amp;1 &amp; 验证程序是否已经在后台运行 成功之后，关闭当前终端 打开新的终端，ssh命令连接服务器 输入 ps -aux|grep 程序名.py ，就能看到正在运行的程序啦 训练完毕后杀死进程 在执行 ps -aux|grep 程序名.py 的时候，我们可以看到第二列是程序运行的ID，记下ID号码 命令行输入 kill -9 ID号 ，就可以杀死进程啦 训练完成后想看程序中关于 print 的输出，只要打开自定义的目录文件下的 目录.log 就可以查看啦~]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[ubuntu常用指令集合]]></title>
+    <url>%2F2019%2F05%2F26%2Fubuntu%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E9%9B%86%E5%90%88%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[linux终端使用百度云的方法--BaiduPCS-Goo]]></title>
     <url>%2F2019%2F05%2F22%2Flinux%E7%BB%88%E7%AB%AF%E4%BD%BF%E7%94%A8%E7%99%BE%E5%BA%A6%E4%BA%91%E7%9A%84%E6%96%B9%E6%B3%95-BaiduPCS-Goo%2F</url>
     <content type="text"><![CDATA[今天干了件大事哈哈哈哈哈哈哈哈哈哈！！！连接远程服务器的时候传输大文件确实是一件很麻烦很无聊的事情，关键是浪费嗣干！机智的我用了百度云哈哈哈哈哈哈！！！废话不多说！夸我就是！教程如下： 0.先附一官方文档BaiduPCS-Go 百度网盘客户端 1.运行如下代码下载1wget https://github.com/iikira/BaiduPCS-Go/releases/download/v3.5.6/BaiduPCS-Go-v3.5.6-linux-amd64.zip 2.下载完成后解压1unzip BaiduPCS-Go-v3.5.6-linux-amd64.zip 3.将解压后的文件改名为BaiduPCS-Go:1mv BaiduPCS-Go-v3.5.6-linux-amd64 BaiduPCS-Go 4.打开文件1cd BaiduPCS-Go/ 5.运行1sudo ./BaiduPCS-Go 6.登录12login然后按照各种登录提示操作即可 7.下载1d 百度云上要下载的文件路径 比如说 我要下载我的大文件 feats.npy ，他在我百度云下的路径为那么我要下载这个文件的操作就是 d feats.npy 8.其他操作见 0 中的官方文档喔！]]></content>
