@@ -109,6 +109,7 @@
 
 
   <meta name="description" content="在右上角或者左上角实现fork me on github效果图： 实现方法：戳这个链接或这个链接，选择喜欢的图标样式，并复制代码，下面图片红框中右侧的代码： 打开博客主目录文件 -&amp;gt; themes -&amp;gt; next -&amp;gt;  layout -&amp;gt; _layout.swig -&amp;gt; 搜索 class=&amp;quot;headband&amp;quot; -&amp;gt; 将刚才复制的代码粘贴在下">
+<meta name="keywords" content="hexo,next,博客美化">
 <meta property="og:type" content="article">
 <meta property="og:title" content=" hexo+next 部署各种炫酷博客特效">
 <meta property="og:url" content="http://yoursite.com/2019/04/15/hexo-next-部署各种炫酷博客特效/index.html">
@@ -130,7 +131,7 @@
 <meta property="og:image" content="http://yoursite.com/2019/04/15/hexo-next-部署各种炫酷博客特效/koharu.gif">
 <meta property="og:image" content="http://yoursite.com/2019/04/15/hexo-next-部署各种炫酷博客特效/进度.png">
 <meta property="og:image" content="http://yoursite.com/2019/04/15/hexo-next-部署各种炫酷博客特效/当前进度.png">
-<meta property="og:updated_time" content="2019-04-15T05:11:27.730Z">
+<meta property="og:updated_time" content="2019-05-30T08:00:54.026Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content=" hexo+next 部署各种炫酷博客特效">
 <meta name="twitter:description" content="在右上角或者左上角实现fork me on github效果图： 实现方法：戳这个链接或这个链接，选择喜欢的图标样式，并复制代码，下面图片红框中右侧的代码： 打开博客主目录文件 -&amp;gt; themes -&amp;gt; next -&amp;gt;  layout -&amp;gt; _layout.swig -&amp;gt; 搜索 class=&amp;quot;headband&amp;quot; -&amp;gt; 将刚才复制的代码粘贴在下">
@@ -447,12 +448,24 @@
                 
               
 
-              <time title="创建时间：2019-04-15 10:06:44 / 修改时间：13:11:27" itemprop="dateCreated datePublished" datetime="2019-04-15T10:06:44+08:00">2019-04-15</time>
+              <time title="创建时间：2019-04-15 10:06:44" itemprop="dateCreated datePublished" datetime="2019-04-15T10:06:44+08:00">2019-04-15</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-30 16:00:54" itemprop="dateModified" datetime="2019-05-30T16:00:54+08:00">2019-05-30</time>
               
             
           </span>
@@ -506,32 +519,36 @@
       
 
       
-        <h1 id="在右上角或者左上角实现fork-me-on-github"><a href="#在右上角或者左上角实现fork-me-on-github" class="headerlink" title="在右上角或者左上角实现fork me on github"></a>在右上角或者左上角实现fork me on github</h1><p>效果图：<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/forkme.png" alt="forkme效果图"></p>
+        <h2 id="在右上角或者左上角实现fork-me-on-github"><a href="#在右上角或者左上角实现fork-me-on-github" class="headerlink" title="在右上角或者左上角实现fork me on github"></a>在右上角或者左上角实现fork me on github</h2><p>效果图：<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/forkme.png" alt="forkme效果图"></p>
 <p>实现方法：<br>戳<a href="https://github.blog/2008-12-19-github-ribbons/" target="_blank" rel="noopener">这个链接</a>或<a href="http://tholman.com/github-corners/" target="_blank" rel="noopener">这个链接</a>，选择喜欢的图标样式，并复制代码，下面图片红框中右侧的代码：<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/code.png" alt="code"></p>
 <p>打开博客主目录文件 -&gt; <code>themes</code> -&gt; <code>next</code> -&gt;  <code>layout</code> -&gt; <code>_layout.swig</code> -&gt; 搜索 <code>class=&quot;headband&quot;</code> -&gt; 将刚才复制的代码粘贴在下面 -&gt; 并把 <code>href</code> 改为你的github地址<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/修改地址.png" alt="修改地址"></p>
-<h1 id="添加RSS"><a href="#添加RSS" class="headerlink" title="添加RSS"></a>添加RSS</h1><p>效果图：<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/RSS.png" alt="RSS"></p>
-<p>实现方法：<br>找到博客主目录文件 -&gt; 右键 <code>Git Bash Here</code> -&gt; 执行 <code>npm install --save hexo-generator-feed</code> -&gt; 安装结束后，打开博客主目录文件 -&gt; 打开 <code>_config.yml</code> -&gt; 在末尾添加代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: http://hexo.io/plugins/</span><br><span class="line">plugins: hexo-generate-feed</span><br></pre></td></tr></table></figure></p>
+<h2 id="添加RSS"><a href="#添加RSS" class="headerlink" title="添加RSS"></a>添加RSS</h2><p>效果图：<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/RSS.png" alt="RSS"></p>
+<p>实现方法：<br>找到博客主目录文件 -&gt; 右键 <code>Git Bash Here</code> -&gt; 执行 <code>npm install --save hexo-generator-feed</code> -&gt; 安装结束后，打开博客主目录文件 -&gt; 打开 <code>_config.yml</code> -&gt; 在末尾添加代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: http://hexo.io/plugins/</span><br><span class="line">plugins: hexo-generate-feed</span><br></pre></td></tr></table></figure>
 <p>再打开 <code>themes</code> -&gt; <code>next</code> -&gt;  <code>_config.yml</code> -&gt; 搜索 <code>rss</code> -&gt; 在 <code>rss:</code> 后面添加 <code>/atom.xml</code>，,注意在冒号后面要加一个空格<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/添加rss.png" alt="添加rss"></p>
-<h1 id="侧边栏社交小图标设置"><a href="#侧边栏社交小图标设置" class="headerlink" title="侧边栏社交小图标设置"></a>侧边栏社交小图标设置</h1><p>效果图：<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/社交.png" alt="社交"></p>
+<h2 id="侧边栏社交小图标设置"><a href="#侧边栏社交小图标设置" class="headerlink" title="侧边栏社交小图标设置"></a>侧边栏社交小图标设置</h2><p>效果图：<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/社交.png" alt="社交"></p>
 <p>实现：<br>打开博客主目录文件 -&gt; <code>themes</code> -&gt; <code>next</code>  -&gt; <code>_config.yml</code> -&gt; 搜索 <code>social</code> -&gt; 删掉想要展示的社交账号前面的 <code>#</code> 号，将地址改为自己的地址 -&gt; 找到下面的 <code>social_icons:</code> -&gt; 将 <code>enable</code> 设置为 <code>true</code> -&gt; 在<a href="https://fontawesome.com/v4.7.0/icons/" target="_blank" rel="noopener">图标库</a>找自己喜欢的小图标，并将名字复制在如下位置，保存即可<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/配置.png" alt="配置"></p>
-<h1 id="主页文章添加阴影效果"><a href="#主页文章添加阴影效果" class="headerlink" title="主页文章添加阴影效果"></a>主页文章添加阴影效果</h1><p>效果图：<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/阴影.png" alt="阴影"></p>
-<p>实现：<br>打开博客主目录文件 -&gt; <code>themes</code> -&gt; <code>next</code>  -&gt; <code>source</code> -&gt; <code>css</code> -&gt; <code>_custom</code> -&gt; <code>custom.styl</code> -&gt; 在里面粘贴如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.post &#123;</span><br><span class="line">   margin-top: 60px;</span><br><span class="line">   margin-bottom: 60px;</span><br><span class="line">   padding: 25px;</span><br><span class="line">   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);</span><br><span class="line">   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
-<h1 id="页面底部跳动的爱心"><a href="#页面底部跳动的爱心" class="headerlink" title="页面底部跳动的爱心"></a>页面底部跳动的爱心</h1><p>效果图：<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/爱心.png" alt="爱心"></p>
+<h2 id="主页文章添加阴影效果"><a href="#主页文章添加阴影效果" class="headerlink" title="主页文章添加阴影效果"></a>主页文章添加阴影效果</h2><p>效果图：<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/阴影.png" alt="阴影"></p>
+<p>实现：<br>打开博客主目录文件 -&gt; <code>themes</code> -&gt; <code>next</code>  -&gt; <code>source</code> -&gt; <code>css</code> -&gt; <code>_custom</code> -&gt; <code>custom.styl</code> -&gt; 在里面粘贴如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.post &#123;</span><br><span class="line">   margin-top: 60px;</span><br><span class="line">   margin-bottom: 60px;</span><br><span class="line">   padding: 25px;</span><br><span class="line">   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);</span><br><span class="line">   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="页面底部跳动的爱心"><a href="#页面底部跳动的爱心" class="headerlink" title="页面底部跳动的爱心"></a>页面底部跳动的爱心</h2><p>效果图：<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/爱心.png" alt="爱心"></p>
 <p>实现：</p>
 <p>首先找到<a href="https://fontawesome.com/v4.7.0/icons/" target="_blank" rel="noopener">图标库</a>，如我现在选择下图中的爱心，那么我要复制的内容就是下图红框中的 <code>fa-heartbeat</code>。<br>打开博客主目录文件 -&gt; <code>themes</code> -&gt; <code>next</code>  -&gt; <code>_config.yml</code> -&gt; 搜索 <code>footer</code> -&gt; 将 <code>name</code> 后面的 <code>user</code> 替换成 <code>fa-heartbeat</code> -&gt; 将 <code>animated</code> 设置成 <code>true</code> -&gt; 将 <code>color</code> 修改为 <code>#ff0000</code><br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/设置.png" alt="设置"></p>
-<h1 id="页面访问量统计"><a href="#页面访问量统计" class="headerlink" title="页面访问量统计"></a>页面访问量统计</h1><p>实现：<br>打开博客主目录文件 -&gt; <code>themes</code> -&gt; <code>next</code>  -&gt; <code>_config.yml</code> -&gt; 搜索 <code>busuanzi_count</code> -&gt; 将 <code>enable</code> 设置为 <code>true</code></p>
-<h1 id="添加顶部加载条"><a href="#添加顶部加载条" class="headerlink" title="添加顶部加载条"></a>添加顶部加载条</h1><p>实现：<br>打开博客主目录文件 -&gt; <code>themes</code> -&gt; <code>next</code> -&gt;  <code>layout</code> -&gt; <code>_partials</code> -&gt; <code>head</code> -&gt; <code>head.swig</code> -&gt; 在第四行后面添加如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;//cdn.bootcss.com/pace/1.0.2/pace.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;link href=&quot;//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css&quot; rel=&quot;stylesheet&quot;&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="页面访问量统计"><a href="#页面访问量统计" class="headerlink" title="页面访问量统计"></a>页面访问量统计</h2><p>实现：<br>打开博客主目录文件 -&gt; <code>themes</code> -&gt; <code>next</code>  -&gt; <code>_config.yml</code> -&gt; 搜索 <code>busuanzi_count</code> -&gt; 将 <code>enable</code> 设置为 <code>true</code></p>
+<h2 id="添加顶部加载条"><a href="#添加顶部加载条" class="headerlink" title="添加顶部加载条"></a>添加顶部加载条</h2><p>实现：<br>打开博客主目录文件 -&gt; <code>themes</code> -&gt; <code>next</code> -&gt;  <code>layout</code> -&gt; <code>_partials</code> -&gt; <code>head</code> -&gt; <code>head.swig</code> -&gt; 在第四行后面添加如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;//cdn.bootcss.com/pace/1.0.2/pace.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;link href=&quot;//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css&quot; rel=&quot;stylesheet&quot;&gt;</span><br></pre></td></tr></table></figure>
 <p>打开博客主目录文件 -&gt; <code>themes</code> -&gt; <code>next</code>  -&gt; <code>_config.yml</code> -&gt; 搜索 <code>pace</code> -&gt; 将 <code>pace</code> 设置为 <code>true</code><br>默认的颜色是粉红色的。</p>
 <p><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/pace.png" alt="pace"></p>
-<h1 id="隐藏网页底部powered-By-Hexo-强力驱动"><a href="#隐藏网页底部powered-By-Hexo-强力驱动" class="headerlink" title="隐藏网页底部powered By Hexo / 强力驱动"></a>隐藏网页底部powered By Hexo / 强力驱动</h1><p>实现：<br>打开博客主目录文件 -&gt; <code>themes</code> -&gt; <code>next</code> -&gt;  <code>layout</code> -&gt; <code>_partials</code> -&gt; <code>footer.swig</code> -&gt; 搜索 <code>class=&quot;powered-by&quot;</code> -&gt; 使用 <code>&lt;!--   --&gt;</code> 隐藏下图所示代码<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/隐藏.png" alt="隐藏"></p>
-<h1 id="为博客添加萌宠"><a href="#为博客添加萌宠" class="headerlink" title="为博客添加萌宠"></a>为博客添加萌宠</h1><p>效果图：<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/koharu.gif" alt="萌宠"></p>
+<h2 id="隐藏网页底部powered-By-Hexo-强力驱动"><a href="#隐藏网页底部powered-By-Hexo-强力驱动" class="headerlink" title="隐藏网页底部powered By Hexo / 强力驱动"></a>隐藏网页底部powered By Hexo / 强力驱动</h2><p>实现：<br>打开博客主目录文件 -&gt; <code>themes</code> -&gt; <code>next</code> -&gt;  <code>layout</code> -&gt; <code>_partials</code> -&gt; <code>footer.swig</code> -&gt; 搜索 <code>class=&quot;powered-by&quot;</code> -&gt; 使用 <code>&lt;!--   --&gt;</code> 隐藏下图所示代码<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/隐藏.png" alt="隐藏"></p>
+<h2 id="为博客添加萌宠"><a href="#为博客添加萌宠" class="headerlink" title="为博客添加萌宠"></a>为博客添加萌宠</h2><p>效果图：<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/koharu.gif" alt="萌宠"></p>
 <p>实现：<br>先给出hexo-helper-live2d 的 Github 链接：<a href="https://github.com/EYHN/hexo-helper-live2d" target="_blank" rel="noopener">https://github.com/EYHN/hexo-helper-live2d</a></p>
-<h2 id="安装并配置-hexo-helper-live2d"><a href="#安装并配置-hexo-helper-live2d" class="headerlink" title="安装并配置 hexo-helper-live2d"></a>安装并配置 hexo-helper-live2d</h2><h3 id="安装-hexo-helper-live2d"><a href="#安装-hexo-helper-live2d" class="headerlink" title="安装 hexo-helper-live2d"></a>安装 hexo-helper-live2d</h3><p>  找到博客主目录文件 -&gt; 右键 <code>Git Bash Here</code> -&gt; 执行 <code>npm install hexo-helper-live2d --save</code></p>
-<h3 id="配置-hexo-helper-live2d"><a href="#配置-hexo-helper-live2d" class="headerlink" title="配置 hexo-helper-live2d"></a>配置 hexo-helper-live2d</h3><h4 id="挑选萌物"><a href="#挑选萌物" class="headerlink" title="挑选萌物"></a>挑选萌物</h4><p>   到<a href="https://huaji8.top/post/live2d-plugin-2.0/" target="_blank" rel="noopener">插件作者博客</a>挑选你喜欢的萌物，记录下她的名字~</p>
-<h4 id="安装萌物"><a href="#安装萌物" class="headerlink" title="安装萌物"></a>安装萌物</h4><p>   比如说我喜欢 <code>koharu</code>，安装 <code>koharu</code>的步骤：<br>   找到博客主目录文件 -&gt; 右键 <code>Git Bash Here</code> -&gt; 执行 <code>npm install live2d-widget-model-koharu --save</code></p>
-<h4 id="配置萌物"><a href="#配置萌物" class="headerlink" title="配置萌物"></a>配置萌物</h4><p>   打开博客主目录文件 -&gt; <code>_config.yml</code> -&gt; 添加如下代码：<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"># Live2D</span><br><span class="line">## https://github.com/EYHN/hexo-helper-live2d</span><br><span class="line">live2d:</span><br><span class="line">  enable: true</span><br><span class="line">  scriptFrom: local</span><br><span class="line">  pluginRootPath: live2dw/</span><br><span class="line">  pluginJsPath: lib/</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  tagMode: false</span><br><span class="line">  debug: false</span><br><span class="line">  model:</span><br><span class="line">     use: live2d-widget-model-koharu</span><br><span class="line">  display:</span><br><span class="line">     position: right</span><br><span class="line">     width: 150</span><br><span class="line">     height: 300</span><br><span class="line">  mobile:</span><br><span class="line">     show: true</span><br></pre></td></tr></table></figure></p>
+<h3 id="安装并配置-hexo-helper-live2d"><a href="#安装并配置-hexo-helper-live2d" class="headerlink" title="安装并配置 hexo-helper-live2d"></a>安装并配置 hexo-helper-live2d</h3><h4 id="安装-hexo-helper-live2d"><a href="#安装-hexo-helper-live2d" class="headerlink" title="安装 hexo-helper-live2d"></a>安装 hexo-helper-live2d</h4><p>  找到博客主目录文件 -&gt; 右键 <code>Git Bash Here</code> -&gt; 执行 <code>npm install hexo-helper-live2d --save</code></p>
+<h4 id="配置-hexo-helper-live2d"><a href="#配置-hexo-helper-live2d" class="headerlink" title="配置 hexo-helper-live2d"></a>配置 hexo-helper-live2d</h4><h5 id="挑选萌物"><a href="#挑选萌物" class="headerlink" title="挑选萌物"></a>挑选萌物</h5><p>   到<a href="https://huaji8.top/post/live2d-plugin-2.0/" target="_blank" rel="noopener">插件作者博客</a>挑选你喜欢的萌物，记录下她的名字~</p>
+<h5 id="安装萌物"><a href="#安装萌物" class="headerlink" title="安装萌物"></a>安装萌物</h5><p>   比如说我喜欢 <code>koharu</code>，安装 <code>koharu</code>的步骤：<br>   找到博客主目录文件 -&gt; 右键 <code>Git Bash Here</code> -&gt; 执行 <code>npm install live2d-widget-model-koharu --save</code></p>
+<h5 id="配置萌物"><a href="#配置萌物" class="headerlink" title="配置萌物"></a>配置萌物</h5><p>   打开博客主目录文件 -&gt; <code>_config.yml</code> -&gt; 添加如下代码：</p>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"># Live2D</span><br><span class="line">## https://github.com/EYHN/hexo-helper-live2d</span><br><span class="line">live2d:</span><br><span class="line">  enable: true</span><br><span class="line">  scriptFrom: local</span><br><span class="line">  pluginRootPath: live2dw/</span><br><span class="line">  pluginJsPath: lib/</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  tagMode: false</span><br><span class="line">  debug: false</span><br><span class="line">  model:</span><br><span class="line">     use: live2d-widget-model-koharu</span><br><span class="line">  display:</span><br><span class="line">     position: right</span><br><span class="line">     width: 150</span><br><span class="line">     height: 300</span><br><span class="line">  mobile:</span><br><span class="line">     show: true</span><br></pre></td></tr></table></figure>
 <p>执行 <code>hexo clean</code> -&gt;  <code>hexo g</code> -&gt;  <code>hexo s</code> ，就能看见我们的萌宠啦~</p>
-<h1 id="浏览页面的时候显示当前浏览进度"><a href="#浏览页面的时候显示当前浏览进度" class="headerlink" title="浏览页面的时候显示当前浏览进度"></a>浏览页面的时候显示当前浏览进度</h1><p>效果：<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/进度.png" alt="效果"></p>
+<h2 id="浏览页面的时候显示当前浏览进度"><a href="#浏览页面的时候显示当前浏览进度" class="headerlink" title="浏览页面的时候显示当前浏览进度"></a>浏览页面的时候显示当前浏览进度</h2><p>效果：<br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/进度.png" alt="效果"></p>
 <p>实现：<br>打开博客主目录文件 -&gt; <code>themes</code> -&gt; <code>next</code>  -&gt; <code>_config.yml</code> -&gt; 搜索 <code>scrollpercent</code> -&gt; 将 <code>scrollpercent</code> 设置为 <code>true</code><br><img src="/2019/04/15/hexo-next-部署各种炫酷博客特效/当前进度.png" alt="当前进度"></p>
 <p>参考：<br><a href="https://11.tt/posts/2018/how-to-play-with-live2d-on-hexo/" target="_blank" rel="noopener">用Live2D让看板喵入住你的Hexo博客吧(^o^)/~</a><br><a href="http://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html" target="_blank" rel="noopener">hexo的next主题个性化教程:打造炫酷网站</a></p>
 
@@ -603,6 +620,16 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="/tags/next/" rel="tag"># next</a>
+          
+            <a href="/tags/博客美化/" rel="tag"># 博客美化</a>
+          
+        </div>
+      
 
       
       
@@ -622,8 +649,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/16/win10安装cafffe全过程/" rel="prev" title="win10安装cafffe血泪全过程">
-                win10安装cafffe血泪全过程 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/04/16/win10安装cafffe全过程/" rel="prev" title="win10+cpu编译cafffe血泪全过程">
+                win10+cpu编译cafffe血泪全过程 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -720,7 +747,47 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">22</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -791,7 +858,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#在右上角或者左上角实现fork-me-on-github"><span class="nav-number">1.</span> <span class="nav-text">在右上角或者左上角实现fork me on github</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加RSS"><span class="nav-number">2.</span> <span class="nav-text">添加RSS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#侧边栏社交小图标设置"><span class="nav-number">3.</span> <span class="nav-text">侧边栏社交小图标设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#主页文章添加阴影效果"><span class="nav-number">4.</span> <span class="nav-text">主页文章添加阴影效果</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#页面底部跳动的爱心"><span class="nav-number">5.</span> <span class="nav-text">页面底部跳动的爱心</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#页面访问量统计"><span class="nav-number">6.</span> <span class="nav-text">页面访问量统计</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加顶部加载条"><span class="nav-number">7.</span> <span class="nav-text">添加顶部加载条</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#隐藏网页底部powered-By-Hexo-强力驱动"><span class="nav-number">8.</span> <span class="nav-text">隐藏网页底部powered By Hexo / 强力驱动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#为博客添加萌宠"><span class="nav-number">9.</span> <span class="nav-text">为博客添加萌宠</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装并配置-hexo-helper-live2d"><span class="nav-number">9.1.</span> <span class="nav-text">安装并配置 hexo-helper-live2d</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-hexo-helper-live2d"><span class="nav-number">9.1.1.</span> <span class="nav-text">安装 hexo-helper-live2d</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置-hexo-helper-live2d"><span class="nav-number">9.1.2.</span> <span class="nav-text">配置 hexo-helper-live2d</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#挑选萌物"><span class="nav-number">9.1.2.1.</span> <span class="nav-text">挑选萌物</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装萌物"><span class="nav-number">9.1.2.2.</span> <span class="nav-text">安装萌物</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置萌物"><span class="nav-number">9.1.2.3.</span> <span class="nav-text">配置萌物</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#浏览页面的时候显示当前浏览进度"><span class="nav-number">10.</span> <span class="nav-text">浏览页面的时候显示当前浏览进度</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#在右上角或者左上角实现fork-me-on-github"><span class="nav-number">1.</span> <span class="nav-text">在右上角或者左上角实现fork me on github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加RSS"><span class="nav-number">2.</span> <span class="nav-text">添加RSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#侧边栏社交小图标设置"><span class="nav-number">3.</span> <span class="nav-text">侧边栏社交小图标设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主页文章添加阴影效果"><span class="nav-number">4.</span> <span class="nav-text">主页文章添加阴影效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#页面底部跳动的爱心"><span class="nav-number">5.</span> <span class="nav-text">页面底部跳动的爱心</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#页面访问量统计"><span class="nav-number">6.</span> <span class="nav-text">页面访问量统计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加顶部加载条"><span class="nav-number">7.</span> <span class="nav-text">添加顶部加载条</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#隐藏网页底部powered-By-Hexo-强力驱动"><span class="nav-number">8.</span> <span class="nav-text">隐藏网页底部powered By Hexo / 强力驱动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为博客添加萌宠"><span class="nav-number">9.</span> <span class="nav-text">为博客添加萌宠</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装并配置-hexo-helper-live2d"><span class="nav-number">9.1.</span> <span class="nav-text">安装并配置 hexo-helper-live2d</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装-hexo-helper-live2d"><span class="nav-number">9.1.1.</span> <span class="nav-text">安装 hexo-helper-live2d</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置-hexo-helper-live2d"><span class="nav-number">9.1.2.</span> <span class="nav-text">配置 hexo-helper-live2d</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#挑选萌物"><span class="nav-number">9.1.2.1.</span> <span class="nav-text">挑选萌物</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#安装萌物"><span class="nav-number">9.1.2.2.</span> <span class="nav-text">安装萌物</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#配置萌物"><span class="nav-number">9.1.2.3.</span> <span class="nav-text">配置萌物</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览页面的时候显示当前浏览进度"><span class="nav-number">10.</span> <span class="nav-text">浏览页面的时候显示当前浏览进度</span></a></li></ol></div>
             
 
           </div>
