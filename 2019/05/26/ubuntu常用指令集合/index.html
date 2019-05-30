@@ -115,7 +115,7 @@
 <meta property="og:site_name" content="Coding With Yali">
 <meta property="og:description" content="文件操作打开及查看文件夹 打开文件夹： cd 文件路径 返回上一目录：cd .. 列出文件夹下的所有文件：ls 查看文件夹下所有文件的具体信息：ls -al  打开及修改文档 vim  输入 i切换到输入模式，以输入字符 跳到文本的最后一行：按“G”,即“shift+g” 跳到最后一行的最后一个字符：先重复1的操作即按“G”，之后按“$”键，即“shift+4”。 跳到第一行的第一个字符：先按两次">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-27T05:22:53.747Z">
+<meta property="og:updated_time" content="2019-05-30T06:02:49.625Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ubuntu常用指令集合(持续更新中✧(≖ ◡ ≖✿)">
 <meta name="twitter:description" content="文件操作打开及查看文件夹 打开文件夹： cd 文件路径 返回上一目录：cd .. 列出文件夹下的所有文件：ls 查看文件夹下所有文件的具体信息：ls -al  打开及修改文档 vim  输入 i切换到输入模式，以输入字符 跳到文本的最后一行：按“G”,即“shift+g” 跳到最后一行的最后一个字符：先重复1的操作即按“G”，之后按“$”键，即“shift+4”。 跳到第一行的第一个字符：先按两次">
@@ -448,7 +448,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-27 13:22:53" itemprop="dateModified" datetime="2019-05-27T13:22:53+08:00">2019-05-27</time>
+                <time title="修改时间：2019-05-30 14:02:49" itemprop="dateModified" datetime="2019-05-30T14:02:49+08:00">2019-05-30</time>
               
             
           </span>
@@ -539,6 +539,7 @@
 <li>-r:若给出的源文件是一文件夹文件，此时cp将递归复制该文件夹下全部的子文件夹和文件。此时目标文件必须为一个文件夹名。</li>
 <li>-l:不作拷贝，仅仅是链接文件。<br><strong>注：为防止用户在不经意的情况下用cp命令破坏还有一个文件，如用户指定的目标文件名称已存在，用cp命令复制文件后，这个文件就会被新源文件覆盖，因此，建议用户在使用cp命令复制文件时，最好使用i选项。</strong><br>比如从 <code>/home/download</code> 文件夹下复制 <code>123.text</code> 到 目录 <code>/home/jyl/test</code> 下的指令为 <code>cp -i /home/download/123.text /home/jyl/test</code></li>
 </ul>
+<h2 id="移动与重命名"><a href="#移动与重命名" class="headerlink" title="移动与重命名"></a>移动与重命名</h2><p> <strong><code>mv 源文件目录 目标文件目录</code></strong><br> 以上命令可以将源文件目录下的文件移动到目标文件目录下<br> <strong><code>mv 修改前的文件名 想要修改成的文件名</code></strong><br> 以上命令可以给想要修改名字的文件更名</p>
 <h2 id="本地复制文件到远程服务器上"><a href="#本地复制文件到远程服务器上" class="headerlink" title="本地复制文件到远程服务器上"></a>本地复制文件到远程服务器上</h2><p><strong><code>scp -参数 本地文件或文件夹路径 服务器文件或文件夹路径</code></strong><br> 这里的参数有：</p>
 <ul>
 <li>-1： 强制scp命令使用协议ssh1</li>
@@ -576,9 +577,15 @@
 <li>i：使top不显示任何闲置或者僵死进程。</li>
 <li>c:显示整个命令行而不只是显示命令名。</li>
 </ul>
-<p>退出：<code>ctrl+c</code> 或者 <code>q</code></p>
-<p>   暂时能想起来的就这么多啦，后续只要用过的指令会持续更新的！✧(≖ ◡ ≖✿ </p>
-<p>  参考:<br>  <a href="https://www.runoob.com/linux/linux-command-manual.html" target="_blank" rel="noopener">linux命令大全</a></p>
+<p>退出：<code>ctrl+c</code> 或者 <code>q</code><br>其实说实话，直接 <code>top -n 2</code> 这里的 <code>2</code> 代表刷新次数，就可以了，防止top命令卡住最好用的方式哈哈哈</p>
+<h2 id="查看占用cpu最高的进程"><a href="#查看占用cpu最高的进程" class="headerlink" title="查看占用cpu最高的进程"></a>查看占用cpu最高的进程</h2><p>  <strong><code>ps aux|head -1;ps aux|grep -v PID|sort -rn -k +3|head</code></strong></p>
+<h2 id="查看占用内存最高的进程"><a href="#查看占用内存最高的进程" class="headerlink" title="查看占用内存最高的进程"></a>查看占用内存最高的进程</h2><p>  <strong><code>ps aux|head -1;ps aux|grep -v PID|sort -rn -k +4|head</code></strong></p>
+<h2 id="查看服务器带宽"><a href="#查看服务器带宽" class="headerlink" title="查看服务器带宽"></a>查看服务器带宽</h2><ul>
+<li><code>ifconfig</code></li>
+<li><code>sudo ethtool xxx</code></li>
+</ul>
+<p>暂时能想起来的就这么多啦，后续只要用过的指令会持续更新的！✧(≖ ◡ ≖✿ </p>
+<p>参考:<br>  <a href="https://www.runoob.com/linux/linux-command-manual.html" target="_blank" rel="noopener">linux命令大全</a></p>
 
       
     </div>
@@ -667,8 +674,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/26/使用nolup后台运行python脚本/" rel="prev" title="使用nolup后台运行python脚本">
-                使用nolup后台运行python脚本 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/05/26/使用nolup后台运行python脚本/" rel="prev" title="使用nohup后台运行python脚本">
+                使用nohup后台运行python脚本 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -742,7 +749,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -817,7 +824,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#文件操作"><span class="nav-number">1.</span> <span class="nav-text">文件操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#打开及查看文件夹"><span class="nav-number">1.1.</span> <span class="nav-text">打开及查看文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打开及修改文档"><span class="nav-number">1.2.</span> <span class="nav-text">打开及修改文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除文件夹"><span class="nav-number">1.3.</span> <span class="nav-text">删除文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解压文件"><span class="nav-number">1.4.</span> <span class="nav-text">解压文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#复制文件"><span class="nav-number">1.5.</span> <span class="nav-text">复制文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地复制文件到远程服务器上"><span class="nav-number">1.6.</span> <span class="nav-text">本地复制文件到远程服务器上</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查看进程状态"><span class="nav-number">2.</span> <span class="nav-text">查看进程状态</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ps"><span class="nav-number">2.1.</span> <span class="nav-text">ps</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#top"><span class="nav-number">2.2.</span> <span class="nav-text">top</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#文件操作"><span class="nav-number">1.</span> <span class="nav-text">文件操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#打开及查看文件夹"><span class="nav-number">1.1.</span> <span class="nav-text">打开及查看文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打开及修改文档"><span class="nav-number">1.2.</span> <span class="nav-text">打开及修改文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除文件夹"><span class="nav-number">1.3.</span> <span class="nav-text">删除文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解压文件"><span class="nav-number">1.4.</span> <span class="nav-text">解压文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#复制文件"><span class="nav-number">1.5.</span> <span class="nav-text">复制文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#移动与重命名"><span class="nav-number">1.6.</span> <span class="nav-text">移动与重命名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地复制文件到远程服务器上"><span class="nav-number">1.7.</span> <span class="nav-text">本地复制文件到远程服务器上</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查看进程状态"><span class="nav-number">2.</span> <span class="nav-text">查看进程状态</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ps"><span class="nav-number">2.1.</span> <span class="nav-text">ps</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#top"><span class="nav-number">2.2.</span> <span class="nav-text">top</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看占用cpu最高的进程"><span class="nav-number">2.3.</span> <span class="nav-text">查看占用cpu最高的进程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看占用内存最高的进程"><span class="nav-number">2.4.</span> <span class="nav-text">查看占用内存最高的进程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看服务器带宽"><span class="nav-number">2.5.</span> <span class="nav-text">查看服务器带宽</span></a></li></ol></li></ol></div>
             
 
           </div>

@@ -108,32 +108,23 @@
 
 
 
-  <meta name="description" content="搭建过程本次搭建Hexo使用的本地环境如下：   Windows 10 node v10.15.3 -x64 git version2.20.1.windows.1 hexo v3.8.0 next v6.0.0   准备软件的安装Node.js  打开Node.js官网(http://nodejs.org)，我们就能看见如下的安装界面：    点击左面的按钮(10.15.3LTS)，下载 nod">
+  <meta name="description" content="最近使用ubuntu系统调试bug的时候，百度问题的时候超级费劲，一怒之下还是安装了google翻墙去国外搜索教程，下面是本次安装的具体过程，尽情食用~ 安装 google chrome 进入 Ubuntu 16.04 桌面，按下 Ctrl + Alt + t 键盘组合键，启动终端。 在终端中，输入sudo wget http://www.linuxidc.com/files/repo/googl">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用Github+hexo+next搭建个人博客的全过程">
-<meta property="og:url" content="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/index.html">
+<meta property="og:title" content="ubuntu16.04 google shadowsocks 科学上网配置教程 ">
+<meta property="og:url" content="http://yoursite.com/2019/05/30/ubuntu16-04-google-shadowsocks-科学上网配置教程/index.html">
 <meta property="og:site_name" content="Coding With Yali">
-<meta property="og:description" content="搭建过程本次搭建Hexo使用的本地环境如下：   Windows 10 node v10.15.3 -x64 git version2.20.1.windows.1 hexo v3.8.0 next v6.0.0   准备软件的安装Node.js  打开Node.js官网(http://nodejs.org)，我们就能看见如下的安装界面：    点击左面的按钮(10.15.3LTS)，下载 nod">
+<meta property="og:description" content="最近使用ubuntu系统调试bug的时候，百度问题的时候超级费劲，一怒之下还是安装了google翻墙去国外搜索教程，下面是本次安装的具体过程，尽情食用~ 安装 google chrome 进入 Ubuntu 16.04 桌面，按下 Ctrl + Alt + t 键盘组合键，启动终端。 在终端中，输入sudo wget http://www.linuxidc.com/files/repo/googl">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/node安装界面.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/git安装界面.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/gitwindows.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/注册界面.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/创建Repository.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/开始.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/ssh.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/web_08.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/勾选.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/setting.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/add.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/初始界面.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/next初始化.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/githubSSH.png">
-<meta property="og:updated_time" content="2019-04-14T09:41:52.500Z">
+<meta property="og:image" content="http://yoursite.com/2019/05/30/ubuntu16-04-google-shadowsocks-科学上网配置教程/搜索.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/30/ubuntu16-04-google-shadowsocks-科学上网配置教程/配置编辑器.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/30/ubuntu16-04-google-shadowsocks-科学上网配置教程/添加插件.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/30/ubuntu16-04-google-shadowsocks-科学上网配置教程/情景模式.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/30/ubuntu16-04-google-shadowsocks-科学上网配置教程/代理服务器.png">
+<meta property="og:updated_time" content="2019-05-30T05:59:40.988Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用Github+hexo+next搭建个人博客的全过程">
-<meta name="twitter:description" content="搭建过程本次搭建Hexo使用的本地环境如下：   Windows 10 node v10.15.3 -x64 git version2.20.1.windows.1 hexo v3.8.0 next v6.0.0   准备软件的安装Node.js  打开Node.js官网(http://nodejs.org)，我们就能看见如下的安装界面：    点击左面的按钮(10.15.3LTS)，下载 nod">
-<meta name="twitter:image" content="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/node安装界面.png">
+<meta name="twitter:title" content="ubuntu16.04 google shadowsocks 科学上网配置教程 ">
+<meta name="twitter:description" content="最近使用ubuntu系统调试bug的时候，百度问题的时候超级费劲，一怒之下还是安装了google翻墙去国外搜索教程，下面是本次安装的具体过程，尽情食用~ 安装 google chrome 进入 Ubuntu 16.04 桌面，按下 Ctrl + Alt + t 键盘组合键，启动终端。 在终端中，输入sudo wget http://www.linuxidc.com/files/repo/googl">
+<meta name="twitter:image" content="http://yoursite.com/2019/05/30/ubuntu16-04-google-shadowsocks-科学上网配置教程/搜索.png">
 
 
 
@@ -143,7 +134,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/30/ubuntu16-04-google-shadowsocks-科学上网配置教程/">
 
 
 
@@ -153,7 +144,7 @@
   };
 </script>
 
-  <title>使用Github+hexo+next搭建个人博客的全过程 | Coding With Yali</title>
+  <title>ubuntu16.04 google shadowsocks 科学上网配置教程  | Coding With Yali</title>
   
 
 
@@ -403,7 +394,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/30/ubuntu16-04-google-shadowsocks-科学上网配置教程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="JiYali">
@@ -420,7 +411,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">使用Github+hexo+next搭建个人博客的全过程
+          <h1 class="post-title" itemprop="name headline">ubuntu16.04 google shadowsocks 科学上网配置教程 
 
               
             
@@ -446,7 +437,7 @@
                 
               
 
-              <time title="创建时间：2019-04-14 13:35:34 / 修改时间：17:41:52" itemprop="dateCreated datePublished" datetime="2019-04-14T13:35:34+08:00">2019-04-14</time>
+              <time title="创建时间：2019-05-30 11:38:40 / 修改时间：13:59:40" itemprop="dateCreated datePublished" datetime="2019-05-30T11:38:40+08:00">2019-05-30</time>
             
 
             
@@ -469,8 +460,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/" itemprop="commentCount"></span>
+                <a href="/2019/05/30/ubuntu16-04-google-shadowsocks-科学上网配置教程/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/30/ubuntu16-04-google-shadowsocks-科学上网配置教程/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -505,76 +496,52 @@
       
 
       
-        <h1 id="搭建过程"><a href="#搭建过程" class="headerlink" title="搭建过程"></a>搭建过程</h1><p>本次搭建Hexo使用的本地环境如下：</p>
-<blockquote>
-<ul>
-<li>Windows 10</li>
-<li>node v10.15.3 -x64</li>
-<li>git version2.20.1.windows.1</li>
-<li>hexo v3.8.0</li>
-<li>next v6.0.0</li>
+        <p>最近使用ubuntu系统调试bug的时候，百度问题的时候超级费劲，一怒之下还是安装了google翻墙去国外搜索教程，下面是本次安装的具体过程，尽情食用~</p>
+<h2 id="安装-google-chrome"><a href="#安装-google-chrome" class="headerlink" title="安装 google chrome"></a>安装 google chrome</h2><ul>
+<li>进入 Ubuntu 16.04 桌面，按下 Ctrl + Alt + t 键盘组合键，启动终端。</li>
+<li>在终端中，输入<br><code>sudo wget http://www.linuxidc.com/files/repo/google-chrome.list -P /etc/apt/sources.list.d/</code></li>
+<li>在终端中，输入 <code>wget -q -O - https://dl.google.com/linux/linux_signing_key.pub  | sudo apt-key add -</code> ,导入谷歌软件的公钥，用于下面步骤中对下载软件进行验证。如果顺利的话，命令将返回“OK”。</li>
+<li>在终端中，输入 <code>sudo apt-get update</code>用于对当前系统的可用更新列表进行更新。</li>
+<li>在终端中，输入 <code>sudo apt-get install google-chrome-stable</code> ,执行对谷歌 Chrome 浏览器（稳定版）的安装。</li>
+<li>最后，如果一切顺利，在终端中执行 <code>/usr/bin/google-chrome-stable</code> ,将会启动谷歌 Chrome 浏览器，它的图标将会出现在屏幕左侧的 <code>Launcher</code> 上，在图标上右键 -&gt; <code>锁定到启动器</code>，以后就可以简单地单击启动了。</li>
 </ul>
-</blockquote>
-<h2 id="准备软件的安装"><a href="#准备软件的安装" class="headerlink" title="准备软件的安装"></a>准备软件的安装</h2><h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h3><p>  打开<a href="http://nodejs.org" target="_blank" rel="noopener">Node.js官网(http://nodejs.org)</a>，我们就能看见如下的安装界面：<br>  <img src="/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/node安装界面.png" alt="Node.js安装界面"><br>  点击左面的按钮(10.15.3LTS)，下载 <code>node-v10.15.3-x64.msi</code> 安装文件。<br>  下载完成后，打开 <code>node-v10.15.3-x64.msi</code> 进行安装。<br>  除非你要修改安装路径或者有什么特殊的需求，否则一路默认安装即可。<br>  安装完成后，打开cmd，输入 <code>node -v</code> ，若为以下类似的输出，则安装成功。<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator&gt;node -v</span><br><span class="line">v10.15.3</span><br></pre></td></tr></table></figure></p>
-<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><p>  打开<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git官网(https://git-scm.com/downloads)</a>，我们就能看见如下安装界面：<br>    <img src="/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/git安装界面.png" alt="Git安装界面"><br>    选择适用系统(比如windows)，点击进入后<br>    <img src="/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/gitwindows.png" alt="Git安装界面"><br>    选择图中红框内的链接，下载 <code>Git-2.21.0-64-bit.exe</code> 安装文件。<br>    下载完成后，打开 <code>Git-2.21.0-64-bit.exe</code> 进行安装。<br>    安装完成后，打开cmd，输入 <code>git --version</code> ，若为以下类似的输出，则安装成功。<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator&gt;git --version</span><br><span class="line">git version 2.20.1.windows.1</span><br></pre></td></tr></table></figure></p>
-<h3 id="github"><a href="#github" class="headerlink" title="github"></a>github</h3><h4 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h4><p>   点击<a href="https://github.com/" target="_blank" rel="noopener">github官网(https://github.com/)</a><br>  <img src="/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/注册界面.png" alt="github注册界面"><br>  这里的 <code>Username</code> 慎重考虑喔！因为个人网站的固定格式就是：<code>username.github.io</code></p>
-<h4 id="创建Repository"><a href="#创建Repository" class="headerlink" title="创建Repository"></a>创建Repository</h4><p>   登录github之后，点击右上角的 + 号，选择New repository 创建一个与你的博客相关的Repository项目进行管理，之后所有你博客的动态都会在这Repository更新。Repository的名字是username.github.io，比如我的JiYali.github.io已经创建。其余可以先不填，点击Create repository<br>   <img src="/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/创建Repository.png" alt="创建Repository界面"></p>
-<h4 id="配置和使用github"><a href="#配置和使用github" class="headerlink" title="配置和使用github"></a>配置和使用github</h4><p>   开始—所有应用—找到git bash<br>   <img src="/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/开始.png" alt="开始界面"></p>
-<h4 id="配置SSH-Keys"><a href="#配置SSH-Keys" class="headerlink" title="配置SSH Keys"></a>配置SSH Keys</h4><p>   SSH Keys用来使本地git项目与GitHub联系，这样能在GitHub上的博客项目是最新更新的。</p>
-<ul>
-<li><p>检查SSH Key的设置<br>首先检查自己电脑上现有的SSH Key:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
-<p>如果显示下图信息，则说明这是你第一次使用git<br><img src="/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/ssh.png" alt="ssh"></p>
+<h2 id="shadowsocks-教程"><a href="#shadowsocks-教程" class="headerlink" title="shadowsocks 教程"></a>shadowsocks 教程</h2><h3 id="加入PPA源和更新、安装命令"><a href="#加入PPA源和更新、安装命令" class="headerlink" title="加入PPA源和更新、安装命令"></a>加入PPA源和更新、安装命令</h3><ul>
+<li><p>命令行输入以下指令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo add-apt-repository ppa:hzwhuang/ss-qt5</span><br><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install shadowsocks-qt5</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>生成新的SSH Key:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;邮件地址@youremail.com&quot;</span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file in which to save the key (/Users/your_user_directory/.ssh/id_rsa):&lt;回车就好&gt;</span><br></pre></td></tr></table></figure>
-<p>这里的邮箱地址，输入注册github的邮箱地址<br>然后系统会要你输入密码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase (empty for no passphrase):&lt;设置密码&gt;</span><br><span class="line">Enter same passphrase again:&lt;再次输入密码&gt;</span><br></pre></td></tr></table></figure>
-<p>再回车，这里会提示你输入一个密码，作为你提交项目时使用。<br>这个密码的作用就是在个人网站里所有的改动只能经过你的手，也可以不设置密码，直接为空。<br>注意：输入密码的时候没有输入痕迹的，不要以为什么也没有输入。<br>最后看到类似于这样的界面，就成功设置ssh key了：<br><img src="/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/web_08.png" alt="密钥界面"></p>
-</li>
-<li><p>添加SSH Key到github上<br>在本地文件夹找到id_rsa.pub文件。看上面图片中的第四行的位置就告诉你保存在哪里了。默认为<code>C:\Users\Administrator\.ssh</code>。没找到的话勾选一下文 件扩展名和隐藏的项目。<br><img src="/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/勾选.png" alt="勾选"><br>.ssh文件夹里记事本打开这个文件复制全部内容到github相应位置<br>回到你的GitHub主页，右上角点击头像选中Setting<br><img src="/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/setting.png" alt="setting"><br>继续选中左边菜单栏的SSH and GPG keys<br><img src="/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/add.png" alt="add"><br>Title最好写，随便写。网上有说不写title也有可能后期出现乱七八糟的错误<br>Key部分就是放刚才复制的内容了，点击Add SSH key</p>
-<h4 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h4><p>回到git bash 框里<br>输入以下代码，不要改任何一个字！！！</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-<p>回车，看到如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">The authenticity of host &apos;github.com (52.74.223.119)&apos; can&apos;t be established.</span><br><span class="line">RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.</span><br><span class="line">Are you sure you want to continue connecting (yes/no)?</span><br></pre></td></tr></table></figure>
-<p>输入yes回车</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase for key &apos;/c/Users/Administrator/.ssh/id_rsa&apos;:</span><br></pre></td></tr></table></figure>
-<p>输入刚才设置的密码回车，看到“You’ve successfully authenticated…”<br>成功！下一步！</p>
-<h4 id="输入用户信息"><a href="#输入用户信息" class="headerlink" title="输入用户信息"></a>输入用户信息</h4><p>现在已经成功通过SSH链接到github啦，我们需要完善一下个人信息：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;username&quot; //输入注册时的username</span><br><span class="line">$ git config --global user.email  &quot;注册的邮箱地址&quot; //填写注册邮箱</span><br></pre></td></tr></table></figure>
-<p>到此，SSH Key配置结束啦！你的电脑已成功连接到 github。</p>
+<li><p>成功后打开 <code>Dash</code> ，搜索 <code>Shadowscoks</code> </p>
 </li>
 </ul>
-<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><p>开始菜单中打开git bash，利用npm命令安装hexo<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure></p>
-<p>请耐心稍等一会儿，如果在安装过程中头部出现 WARN ，可能是因为某些内容不支持 Windows，请不要担心，并不影响实际使用。</p>
-<p>(在我写教程的时候安装hexo死活就是出错，尝试了<br><code>npm config set registry https://registry.npm.taobao.org</code><br>再输入<code>npm install -g hexo</code>后才安装正常，可以做个小参考，如果没用，请自行百度解决~)</p>
-<p>在安装完成后，输入<code>hexo -v</code>，若出现类似以下内容，则 Hexo 已经安装成功。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">hexo-cli: 1.1.0</span><br><span class="line">os: Windows_NT 10.0.17763 win32 x64</span><br><span class="line">http_parser: 2.8.0</span><br><span class="line">node: 10.15.3</span><br><span class="line">v8: 6.8.275.32-node.51</span><br><span class="line">uv: 1.23.2</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">ares: 1.15.0</span><br><span class="line">modules: 64</span><br><span class="line">nghttp2: 1.34.0</span><br><span class="line">napi: 3</span><br><span class="line">openssl: 1.1.0j</span><br><span class="line">icu: 62.1</span><br><span class="line">unicode: 11.0</span><br><span class="line">cldr: 33.1</span><br><span class="line">tz: 2018e</span><br></pre></td></tr></table></figure></p>
-<h2 id="搭建hexo博客"><a href="#搭建hexo博客" class="headerlink" title="搭建hexo博客"></a>搭建hexo博客</h2><h3 id="创建博客主目录"><a href="#创建博客主目录" class="headerlink" title="创建博客主目录"></a>创建博客主目录</h3><p>在本地创建一个与 Repository中博客项目同名的文件夹username.github.io(如D:/JiYali.github.io)</p>
-<h3 id="初始化hexo主目录"><a href="#初始化hexo主目录" class="headerlink" title="初始化hexo主目录"></a>初始化hexo主目录</h3><p>在文件夹上点击鼠标右键，选择 Git bash here，输入如下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></p>
+<p><img src="/2019/05/30/ubuntu16-04-google-shadowsocks-科学上网配置教程/搜索.png" alt="搜索"></p>
 <ul>
-<li><p>安装依赖包</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>确保git部署</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>本地查看</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-<p>打开浏览器，在地址输入<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> ，我们就可以看到激动人心的界面啦！<br><img src="/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/初始界面.png" alt="初始界面"><br>至此hexo博客就真的已经简！单！的！搭！建！完！成！了！✿✿ヽ(°▽°)ノ✿</p>
+<li>打开后 -&gt; 选择 <code>连接</code> -&gt; <code>添加</code> -&gt; <code>手动</code> -&gt; 添加shandowsocks的服务器地址、服务器端口、密钥、加密方式</li>
+</ul>
+<p><img src="/2019/05/30/ubuntu16-04-google-shadowsocks-科学上网配置教程/配置编辑器.png" alt="配置编辑器"></p>
+<ul>
+<li>设置完成后，选择 <code>连接</code></li>
+</ul>
+<h3 id="SwitchyOmega"><a href="#SwitchyOmega" class="headerlink" title="SwitchyOmega"></a>SwitchyOmega</h3><ul>
+<li>下载插件，附一下载地址：<a href="https://github.com/FelisCatus/SwitchyOmega/releases" target="_blank" rel="noopener">SwitchyOmega for Chromium &amp; Firefox</a>，选择 <code>SwitchyOmega_Chromium.crx</code> ,点击下载</li>
+<li>安装插件：打开chrom浏览器，单机右上角的三个点，选择 <code>更多工具</code> -&gt; <code>扩展程序</code> -&gt; 打开右上角的 <code>开发者模式</code> 开关 -&gt; 将下载的 <code>SwitchyOmega_Chromium.crx</code> 拖拽进来，安装成功</li>
+</ul>
+<p><img src="/2019/05/30/ubuntu16-04-google-shadowsocks-科学上网配置教程/添加插件.png" alt="添加插件"><br><em>注：安装这个插件的时候我这里出现不能安装甚至按照网上的教程重命名成zip文件解压各种方法都无法安装的问题，这里我的解决办法就是试一下下载低版本的插件哈哈哈哈没想到成功了</em></p>
+<ul>
+<li><p>配置</p>
+<ul>
+<li>SwitchyOmega插件安装成功后，chrom浏览器右上角会出现一个黑圈圈的标志，点击这个黑圈圈，进入 <code>SwitchyOmega选项</code></li>
+<li>选择 <code>新建情景模式</code> ，随意起一个情景模式名称，选择 <code>代理服务器</code></li>
+</ul>
+<p><img src="/2019/05/30/ubuntu16-04-google-shadowsocks-科学上网配置教程/情景模式.png" alt="情景模式"></p>
+<ul>
+<li>修改代理服务器：将 <code>代理协议</code> 修改为 <code>SOCKS5</code> ,将 <code>代理服务器</code> 修改为 <code>127.0.0.1</code> ,在下面不代理的地址列表中可以添加不想代理的地址，比如说百度。</li>
+</ul>
+<p><img src="/2019/05/30/ubuntu16-04-google-shadowsocks-科学上网配置教程/代理服务器.png" alt="代理服务器"></p>
+<ul>
+<li>点击左侧的 <code>应用选项</code> 保存</li>
+</ul>
 </li>
 </ul>
-<h2 id="使用next主题"><a href="#使用next主题" class="headerlink" title="使用next主题"></a>使用next主题</h2><p>我想说next这个主题真的是超简单方面，之前尝试了几个主题配置方面都是贼麻烦，所以最终还是随大流选择了next，emmmm..完全是发现了新！大！陆！(✪ω✪)</p>
-<h3 id="克隆主题"><a href="#克隆主题" class="headerlink" title="克隆主题"></a>克隆主题</h3><p>在博客主目录文件上点击鼠标右键，选择 Git bash here，输入如下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></p>
-<h3 id="启用next主题"><a href="#启用next主题" class="headerlink" title="启用next主题"></a>启用next主题</h3><p>我们在博客主目录文件夹下可以看到有一个名为 <code>_config.yml</code> 的配置文件，我们用编辑器打开它，搜索 <code>theme</code>，我们可以找到以下内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: landscape</span><br></pre></td></tr></table></figure></p>
-<p>我们要将其中的 <code>landscape</code> 修改为我们要是用的 <code>next</code>，修改完如下所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure></p>
-<h3 id="查看已启用的主题"><a href="#查看已启用的主题" class="headerlink" title="查看已启用的主题"></a>查看已启用的主题</h3><p>我们在 Git Bash 依次输入下方三条命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure></p>
-<p>就可以看到如下界面啦<br><img src="/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/next初始化.png" alt="next初始化"></p>
-<h1 id="将博客部署到uesrname-github-io"><a href="#将博客部署到uesrname-github-io" class="headerlink" title="将博客部署到uesrname.github.io"></a>将博客部署到uesrname.github.io</h1><h2 id="复制SSH码"><a href="#复制SSH码" class="headerlink" title="复制SSH码"></a>复制SSH码</h2><p>进入 Github 个人主页中的 Repository，复制新建的独立博客项目username.github.io的 SSH码<br><img src="/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/githubSSH.png" alt="gethubSSH"></p>
-<h2 id="编辑整站配置文件"><a href="#编辑整站配置文件" class="headerlink" title="编辑整站配置文件"></a>编辑整站配置文件</h2><p>打开博客主目录文件夹下的 <code>_config.yml</code> ，用编辑器打开它，搜索 <code>deploy</code>，把刚刚复制的 SSH码粘贴到repository：后面，别忘了冒号后要空一格。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:jiyali/JiYali.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
-<h2 id="执行下列指令即可完成部署"><a href="#执行下列指令即可完成部署" class="headerlink" title="执行下列指令即可完成部署"></a>执行下列指令即可完成部署</h2><p>Git Bash 依次输入下方命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></p>
-<p>【提示】如果在配置 SSH key 时设置了密码，执行 hexo d 命令上传文件时需要输入密码进行确认<br>输入密码之后在浏览器输入：username.github.io<br>Surprise🎉！恭喜你~<br>现在你已经拥有自己的一个小空间啦~</p>
-<p>参考链接:<br><a href="http://codewithzhangyi.com/2018/04/19/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%EF%BC%88%E4%B8%8A%EF%BC%89/" target="_blank" rel="noopener">如何搭建自己的个人网站（上）</a><br><a href="https://11.tt/posts/2018/set-up-hexo-with-coding-and-github/" target="_blank" rel="noopener">基于Hexo+Coding+Github搭建个人博客的全过程</a></p>
-<p>我的文章将持续更新在我的 <a href="https://jiyali.github.io/" target="_blank" rel="noopener">https://jiyali.github.io/</a> 里<br>任何疑问请在下方留言，也将在下一期教如何制作留言板和写博客等内容~<br>敬请期待~❤</p>
+<p>这样就可以尽情的在Ubuntu系统下尽情的科学上网啦，另外推荐一个google插件，叫 <code>油猴</code> 巨巨巨巨好用！详细安装教程见此链接 <a href="https://sspai.com/post/40485" target="_blank" rel="noopener">用 Chrome 的人都需要知道的「神器」扩展：「油猴」使用详解</a></p>
 
       
     </div>
@@ -633,7 +600,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/" title="使用Github+hexo+next搭建个人博客的全过程">http://yoursite.com/2019/04/14/使用Github-hexo-next搭建个人博客的全过程/</a>
+    <a href="http://yoursite.com/2019/05/30/ubuntu16-04-google-shadowsocks-科学上网配置教程/" title="ubuntu16.04 google shadowsocks 科学上网配置教程 ">http://yoursite.com/2019/05/30/ubuntu16-04-google-shadowsocks-科学上网配置教程/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -653,15 +620,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/05/26/使用nolup后台运行python脚本/" rel="next" title="使用nohup后台运行python脚本">
+                <i class="fa fa-chevron-left"></i> 使用nohup后台运行python脚本
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/14/使用Valine-js添加留言板功能/" rel="prev" title="使用Valine.js添加留言板功能">
-                使用Valine.js添加留言板功能 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -809,7 +776,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建过程"><span class="nav-number">1.</span> <span class="nav-text">搭建过程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备软件的安装"><span class="nav-number">1.1.</span> <span class="nav-text">准备软件的安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-js"><span class="nav-number">1.1.1.</span> <span class="nav-text">Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git"><span class="nav-number">1.1.2.</span> <span class="nav-text">Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#github"><span class="nav-number">1.1.3.</span> <span class="nav-text">github</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#注册"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">注册</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建Repository"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">创建Repository</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置和使用github"><span class="nav-number">1.1.3.3.</span> <span class="nav-text">配置和使用github</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置SSH-Keys"><span class="nav-number">1.1.3.4.</span> <span class="nav-text">配置SSH Keys</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试"><span class="nav-number">1.1.3.5.</span> <span class="nav-text">测试</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输入用户信息"><span class="nav-number">1.1.3.6.</span> <span class="nav-text">输入用户信息</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo"><span class="nav-number">1.1.4.</span> <span class="nav-text">Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建hexo博客"><span class="nav-number">1.2.</span> <span class="nav-text">搭建hexo博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建博客主目录"><span class="nav-number">1.2.1.</span> <span class="nav-text">创建博客主目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化hexo主目录"><span class="nav-number">1.2.2.</span> <span class="nav-text">初始化hexo主目录</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用next主题"><span class="nav-number">1.3.</span> <span class="nav-text">使用next主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#克隆主题"><span class="nav-number">1.3.1.</span> <span class="nav-text">克隆主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启用next主题"><span class="nav-number">1.3.2.</span> <span class="nav-text">启用next主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看已启用的主题"><span class="nav-number">1.3.3.</span> <span class="nav-text">查看已启用的主题</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#将博客部署到uesrname-github-io"><span class="nav-number">2.</span> <span class="nav-text">将博客部署到uesrname.github.io</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#复制SSH码"><span class="nav-number">2.1.</span> <span class="nav-text">复制SSH码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编辑整站配置文件"><span class="nav-number">2.2.</span> <span class="nav-text">编辑整站配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#执行下列指令即可完成部署"><span class="nav-number">2.3.</span> <span class="nav-text">执行下列指令即可完成部署</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-google-chrome"><span class="nav-number">1.</span> <span class="nav-text">安装 google chrome</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shadowsocks-教程"><span class="nav-number">2.</span> <span class="nav-text">shadowsocks 教程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#加入PPA源和更新、安装命令"><span class="nav-number">2.1.</span> <span class="nav-text">加入PPA源和更新、安装命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SwitchyOmega"><span class="nav-number">2.2.</span> <span class="nav-text">SwitchyOmega</span></a></li></ol></li></ol></div>
             
 
           </div>
