@@ -112,18 +112,17 @@
 
 
 
-  <meta name="description" content="本地连接服务器训练一个机器学习或者深度学习模型的时候，需要花很长时间才能训练出一个结果，但是在这个过程中本地的ssh连接很容易就断开了，这时在服务器上跑的程序也就跟着断掉了，这个时候就非常非常需要后台运行训练程序。 先记录一下使用nohup解决这个问题的过程  因为服务器多人在使用，所以在进入正题之前还是需要先激活环境：source 环境名/bin/activate 打开程序所在文件夹：cd 某文">
-<meta name="keywords" content="深度学习,服务器,nohup">
+  <meta name="description" content="下载tensorflow对应的gpu版本 比如说我要使用的是tensorflow1.10.0，就需要安装1.10.0版本的tensoeflow_gpu  激活自己的环境：source 环境名/bin/activate 安装：pip install -i https://pypi.mirrors.ustc.edu.cn/simple tensorflow_gpu==1.10.0 注：也可以下载.wh">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用nohup后台运行python脚本">
-<meta property="og:url" content="http://yoursite.com/2019/05/26/使用nolup后台运行python脚本/index.html">
+<meta property="og:title" content="tensorflow + GPU 训练深度学习模型">
+<meta property="og:url" content="http://yoursite.com/2019/05/27/tensorflow-GPU-训练深度学习模型/index.html">
 <meta property="og:site_name" content="Coding With Yali">
-<meta property="og:description" content="本地连接服务器训练一个机器学习或者深度学习模型的时候，需要花很长时间才能训练出一个结果，但是在这个过程中本地的ssh连接很容易就断开了，这时在服务器上跑的程序也就跟着断掉了，这个时候就非常非常需要后台运行训练程序。 先记录一下使用nohup解决这个问题的过程  因为服务器多人在使用，所以在进入正题之前还是需要先激活环境：source 环境名/bin/activate 打开程序所在文件夹：cd 某文">
+<meta property="og:description" content="下载tensorflow对应的gpu版本 比如说我要使用的是tensorflow1.10.0，就需要安装1.10.0版本的tensoeflow_gpu  激活自己的环境：source 环境名/bin/activate 安装：pip install -i https://pypi.mirrors.ustc.edu.cn/simple tensorflow_gpu==1.10.0 注：也可以下载.wh">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-30T08:01:44.521Z">
+<meta property="og:updated_time" content="2019-05-29T07:39:38.204Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用nohup后台运行python脚本">
-<meta name="twitter:description" content="本地连接服务器训练一个机器学习或者深度学习模型的时候，需要花很长时间才能训练出一个结果，但是在这个过程中本地的ssh连接很容易就断开了，这时在服务器上跑的程序也就跟着断掉了，这个时候就非常非常需要后台运行训练程序。 先记录一下使用nohup解决这个问题的过程  因为服务器多人在使用，所以在进入正题之前还是需要先激活环境：source 环境名/bin/activate 打开程序所在文件夹：cd 某文">
+<meta name="twitter:title" content="tensorflow + GPU 训练深度学习模型">
+<meta name="twitter:description" content="下载tensorflow对应的gpu版本 比如说我要使用的是tensorflow1.10.0，就需要安装1.10.0版本的tensoeflow_gpu  激活自己的环境：source 环境名/bin/activate 安装：pip install -i https://pypi.mirrors.ustc.edu.cn/simple tensorflow_gpu==1.10.0 注：也可以下载.wh">
 
 
 
@@ -133,7 +132,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/05/26/使用nolup后台运行python脚本/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/27/tensorflow-GPU-训练深度学习模型/">
 
 
 
@@ -143,7 +142,7 @@
   };
 </script>
 
-  <title>使用nohup后台运行python脚本 | Coding With Yali</title>
+  <title>tensorflow + GPU 训练深度学习模型 | Coding With Yali</title>
   
 
 
@@ -393,7 +392,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/26/使用nolup后台运行python脚本/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/27/tensorflow-GPU-训练深度学习模型/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="JiYali">
@@ -410,7 +409,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">使用nohup后台运行python脚本
+          <h1 class="post-title" itemprop="name headline">tensorflow + GPU 训练深度学习模型
 
               
             
@@ -436,7 +435,7 @@
                 
               
 
-              <time title="创建时间：2019-05-26 17:47:42" itemprop="dateCreated datePublished" datetime="2019-05-26T17:47:42+08:00">2019-05-26</time>
+              <time title="创建时间：2019-05-27 18:21:14" itemprop="dateCreated datePublished" datetime="2019-05-27T18:21:14+08:00">2019-05-27</time>
             
 
             
@@ -453,7 +452,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-30 16:01:44" itemprop="dateModified" datetime="2019-05-30T16:01:44+08:00">2019-05-30</time>
+                <time title="修改时间：2019-05-29 15:39:38" itemprop="dateModified" datetime="2019-05-29T15:39:38+08:00">2019-05-29</time>
               
             
           </span>
@@ -471,8 +470,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/05/26/使用nolup后台运行python脚本/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/26/使用nolup后台运行python脚本/" itemprop="commentCount"></span>
+                <a href="/2019/05/27/tensorflow-GPU-训练深度学习模型/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/27/tensorflow-GPU-训练深度学习模型/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -507,28 +506,21 @@
       
 
       
-        <p>本地连接服务器训练一个机器学习或者深度学习模型的时候，需要花很长时间才能训练出一个结果，但是在这个过程中本地的ssh连接很容易就断开了，这时在服务器上跑的程序也就跟着断掉了，这个时候就非常非常需要后台运行训练程序。</p>
-<p>先记录一下使用nohup解决这个问题的过程</p>
+        <h1 id="下载tensorflow对应的gpu版本"><a href="#下载tensorflow对应的gpu版本" class="headerlink" title="下载tensorflow对应的gpu版本"></a>下载tensorflow对应的gpu版本</h1><p> 比如说我要使用的是tensorflow1.10.0，就需要安装1.10.0版本的tensoeflow_gpu</p>
 <ul>
-<li>因为服务器多人在使用，所以在进入正题之前还是需要先激活环境：source 环境名/bin/activate</li>
-<li>打开程序所在文件夹：cd 某文件夹</li>
+<li>激活自己的环境：<code>source 环境名/bin/activate</code></li>
+<li><p>安装：<code>pip install -i https://pypi.mirrors.ustc.edu.cn/simple tensorflow_gpu==1.10.0</code></p>
+<p>注：也可以下载<code>.whl</code>文件之后手动安装，<code>pip install tensorflow_gpu-1.10.0-cp35-cp35m-manylinux1_x86_64.whl</code></p>
+</li>
 </ul>
-<p>接下来进入正题，使用nohup：</p>
-<ul>
-<li>在上述步骤结束之后，继续输入：<code>nohup python -u 程序名.py &gt; /日志路径 日志名.log 2&gt;&amp;1 &amp;</code></li>
+<p>问题：在其中出现了各种奇奇怪怪的情况，比如说报错：<code>***  is not a supported wheel on this platform</code></p>
+<p>解决：命令行输入：<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import pip._internal</span><br><span class="line">print(pip._internal.pep425tags.get_supported())</span><br></pre></td></tr></table></figure></p>
+<p>   然后按照里面列出来的命名规范修改名字就可以啦</p>
+<h1 id="修改程序"><a href="#修改程序" class="headerlink" title="修改程序"></a>修改程序</h1><ul>
+<li>查看当前GPU的使用情况：<code>nvidia-smi</code></li>
 </ul>
-<p>验证程序是否已经在后台运行</p>
-<ul>
-<li>成功之后，关闭当前终端</li>
-<li>打开新的终端，ssh命令连接服务器</li>
-<li>输入 <code>ps -aux|grep 程序名.py</code> ，就能看到正在运行的程序啦</li>
-</ul>
-<p>训练完毕后杀死进程</p>
-<ul>
-<li>在执行 <code>ps -aux|grep 程序名.py</code> 的时候，我们可以看到第二列是程序运行的ID，记下ID号码</li>
-<li>命令行输入 <code>kill -9 ID号</code> ，就可以杀死进程啦</li>
-</ul>
-<p>训练完成后想看程序中关于 <code>print</code> 的输出，只要打开自定义的目录文件下的 <code>目录.log</code> 就可以查看啦~</p>
+<p>tf.device(‘/gpu:2’)</p>
+<p>import os<br>os.environ[‘CUDA_VISIBLE_DEVICES’]=’2’</p>
 
       
     </div>
@@ -587,7 +579,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="http://yoursite.com/2019/05/26/使用nolup后台运行python脚本/" title="使用nohup后台运行python脚本">http://yoursite.com/2019/05/26/使用nolup后台运行python脚本/</a>
+    <a href="http://yoursite.com/2019/05/27/tensorflow-GPU-训练深度学习模型/" title="tensorflow + GPU 训练深度学习模型">http://yoursite.com/2019/05/27/tensorflow-GPU-训练深度学习模型/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -598,16 +590,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/深度学习/" rel="tag"># 深度学习</a>
-          
-            <a href="/tags/服务器/" rel="tag"># 服务器</a>
-          
-            <a href="/tags/nohup/" rel="tag"># nohup</a>
-          
-        </div>
-      
 
       
       
@@ -617,8 +599,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/26/ubuntu常用指令集合/" rel="next" title="ubuntu常用指令集合(持续更新中✧(≖ ◡ ≖✿)">
-                <i class="fa fa-chevron-left"></i> ubuntu常用指令集合(持续更新中✧(≖ ◡ ≖✿)
+              <a href="/2019/05/26/使用nolup后台运行python脚本/" rel="next" title="使用nohup后台运行python脚本">
+                <i class="fa fa-chevron-left"></i> 使用nohup后台运行python脚本
               </a>
             
           </div>
@@ -627,8 +609,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/27/tensorflow-GPU-训练深度学习模型/" rel="prev" title="tensorflow + GPU 训练深度学习模型">
-                tensorflow + GPU 训练深度学习模型 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/05/29/ubuntu16-04-cuda8-0-gpu编译caffe/" rel="prev" title="ubuntu16.04 + cuda8.0 + gpu编译caffe">
+                ubuntu16.04 + cuda8.0 + gpu编译caffe <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -677,8 +659,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -816,6 +807,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#下载tensorflow对应的gpu版本"><span class="nav-number">1.</span> <span class="nav-text">下载tensorflow对应的gpu版本</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改程序"><span class="nav-number">2.</span> <span class="nav-text">修改程序</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
