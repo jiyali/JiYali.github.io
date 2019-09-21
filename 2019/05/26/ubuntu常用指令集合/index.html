@@ -16,7 +16,7 @@
 
 <html class="theme-next muse use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 <meta name="google-site-verification" content="1Tfq_gri8R86hWoJbaAzTfv3H13JLR46VtRE3IhFMAU">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -178,7 +178,7 @@
   .use-motion .logo-line-before i { left: initial; }
   .use-motion .logo-line-after i { right: initial; }
   </style>
-</noscript>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </head>
 
@@ -189,7 +189,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 	<a href="https://github.com/jiyali" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
@@ -564,7 +564,7 @@
 <p>以上这些参数其实我也没全用过，满足我正常传文件的需求就使用过 <code>-r</code> ，比如讲本地目录 <code>C:\Users\Administrator\Desktop</code> 下的 <code>test</code> 整个文件夹上传到服务器目录 <code>/home/jyl</code> 下的指令为: <code>scp -r C:\Users\Administrator\Desktop\test 服务器用户名@服务器地址:/home/jyl</code></p>
 </li>
 </ul>
-<p>注：用 <code>scp</code> 传输大文件不知道为什么在我的操作过程中巨慢!!(这个问题如果后期我整理出了问题所在或者解决办法再来补充)，目前最成功的的解决方法是直接用 <code>BaiduPCS-Goo</code> ，将大文件上传到百度云之后，用此工具直接在ubuntu系统中下载下来，教程也在维的博客中出现过，贴一个链接：<a href="https://jiyali.github.io/2019/05/22/linux%E7%BB%88%E7%AB%AF%E4%BD%BF%E7%94%A8%E7%99%BE%E5%BA%A6%E4%BA%91%E7%9A%84%E6%96%B9%E6%B3%95-BaiduPCS-Goo/">linux终端使用百度云的方法–BaiduPCS-Goo</a></p>
+<p>注：用 <code>scp</code> 传输大文件不知道为什么在我的操作过程中巨慢!!(这个问题如果后期我整理出了问题所在或者解决办法再来补充)，目前最成功的的解决方法是直接用 <code>BaiduPCS-Goo</code> ，将大文件上传到百度云之后，用此工具直接在ubuntu系统中下载下来，教程也在维的博客中出现过，贴一个链接：<a href="https://jiyali.github.io/2019/05/22/linux%E7%BB%88%E7%AB%AF%E4%BD%BF%E7%94%A8%E7%99%BE%E5%BA%A6%E4%BA%91%E7%9A%84%E6%96%B9%E6%B3%95-BaiduPCS-Goo/">linux终端使用百度云的方法—BaiduPCS-Goo</a></p>
 <h2 id="查看进程状态"><a href="#查看进程状态" class="headerlink" title="查看进程状态"></a>查看进程状态</h2><h3 id="ps"><a href="#ps" class="headerlink" title="ps"></a><strong><code>ps</code></strong></h3><ul>
 <li>查询指定进程的PID：<code>ps -ef|grep 进程名</code></li>
 <li>查询指定进程名或者PID的占用情况：<code>ps -aux|grep 进程名/PID</code></li>
@@ -757,7 +757,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-count">14</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1428,7 +1428,24 @@
         onPopupClose();
       }
     });
-  </script>
+  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 
 
@@ -1439,6 +1456,13 @@
   
 
   
+  
+
+  
+  
+
+  
+
 
   
 

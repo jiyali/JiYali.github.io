@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://jiyali.github.io/2019/04/16/win10%E5%AE%89%E8%A3%85cafffe%E5%85%A8%E8%BF%87%E7%A8%8B/</loc>
+    <lastmod>2019-09-21</lastmod>
+  </url>  <url>
+    <loc>https://jiyali.github.io/2019/04/22/ubuntu16-4-python-cpu-caffe%E7%BC%96%E8%AF%91%E5%85%A8%E8%BF%87%E7%A8%8B/</loc>
+    <lastmod>2019-09-21</lastmod>
+  </url>  <url>
+    <loc>https://jiyali.github.io/2019/09/11/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-KNN/</loc>
+    <lastmod>2019-09-21</lastmod>
+  </url>  <url>
+    <loc>https://jiyali.github.io/2019/09/09/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%86%B3%E7%AD%96%E6%A0%91/</loc>
+    <lastmod>2019-09-21</lastmod>
+  </url>  <url>
+    <loc>https://jiyali.github.io/2019/05/17/%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2019-09-21</lastmod>
+  </url>  <url>
+    <loc>https://jiyali.github.io/2019/09/21/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2019-09-21</lastmod>
+  </url>  <url>
     <loc>https://jiyali.github.io/2019/05/22/linux%E7%BB%88%E7%AB%AF%E4%BD%BF%E7%94%A8%E7%99%BE%E5%BA%A6%E4%BA%91%E7%9A%84%E6%96%B9%E6%B3%95-BaiduPCS-Goo/</loc>
     <lastmod>2019-07-06</lastmod>
   </url>  <url>
@@ -19,19 +37,10 @@
     <loc>https://jiyali.github.io/2019/05/30/ubuntu16-04-google-shadowsocks-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2019-05-30</lastmod>
   </url>  <url>
-    <loc>https://jiyali.github.io/2019/04/22/ubuntu16-4-python-cpu-caffe%E7%BC%96%E8%AF%91%E5%85%A8%E8%BF%87%E7%A8%8B/</loc>
-    <lastmod>2019-05-30</lastmod>
-  </url>  <url>
-    <loc>https://jiyali.github.io/2019/04/16/win10%E5%AE%89%E8%A3%85cafffe%E5%85%A8%E8%BF%87%E7%A8%8B/</loc>
-    <lastmod>2019-05-30</lastmod>
-  </url>  <url>
     <loc>https://jiyali.github.io/2019/04/14/%E4%BD%BF%E7%94%A8Github-hexo-next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%85%A8%E8%BF%87%E7%A8%8B/</loc>
     <lastmod>2019-05-30</lastmod>
   </url>  <url>
     <loc>https://jiyali.github.io/2019/04/14/%E4%BD%BF%E7%94%A8Valine-js%E6%B7%BB%E5%8A%A0%E7%95%99%E8%A8%80%E6%9D%BF%E5%8A%9F%E8%83%BD/</loc>
-    <lastmod>2019-05-30</lastmod>
-  </url>  <url>
-    <loc>https://jiyali.github.io/2019/05/17/%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2019-05-30</lastmod>
   </url>
 </urlset>
