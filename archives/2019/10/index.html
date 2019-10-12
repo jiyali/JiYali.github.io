@@ -110,18 +110,16 @@
 
 
 
-  <meta name="description" content="本地连接服务器训练一个机器学习或者深度学习模型的时候，需要花很长时间才能训练出一个结果，但是在这个过程中本地的ssh连接很容易就断开了，这时在服务器上跑的程序也就跟着断掉了，这个时候就非常非常需要后台运行训练程序。 先记录一下使用nohup解决这个问题的过程  因为服务器多人在使用，所以在进入正题之前还是需要先激活环境：source 环境名/bin/activate 打开程序所在文件夹：cd 某文">
-<meta name="keywords" content="深度学习,服务器,nohup">
-<meta property="og:type" content="article">
-<meta property="og:title" content="使用nohup后台运行python脚本">
-<meta property="og:url" content="https://jiyali.github.io/2019/05/26/使用nolup后台运行python脚本/index.html">
+  <meta name="description" content="研究生期间遇到的问题的记录">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Coding With Yali">
+<meta property="og:url" content="https://jiyali.github.io/archives/2019/10/index.html">
 <meta property="og:site_name" content="Coding With Yali">
-<meta property="og:description" content="本地连接服务器训练一个机器学习或者深度学习模型的时候，需要花很长时间才能训练出一个结果，但是在这个过程中本地的ssh连接很容易就断开了，这时在服务器上跑的程序也就跟着断掉了，这个时候就非常非常需要后台运行训练程序。 先记录一下使用nohup解决这个问题的过程  因为服务器多人在使用，所以在进入正题之前还是需要先激活环境：source 环境名/bin/activate 打开程序所在文件夹：cd 某文">
+<meta property="og:description" content="研究生期间遇到的问题的记录">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-30T08:01:44.521Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用nohup后台运行python脚本">
-<meta name="twitter:description" content="本地连接服务器训练一个机器学习或者深度学习模型的时候，需要花很长时间才能训练出一个结果，但是在这个过程中本地的ssh连接很容易就断开了，这时在服务器上跑的程序也就跟着断掉了，这个时候就非常非常需要后台运行训练程序。 先记录一下使用nohup解决这个问题的过程  因为服务器多人在使用，所以在进入正题之前还是需要先激活环境：source 环境名/bin/activate 打开程序所在文件夹：cd 某文">
+<meta name="twitter:title" content="Coding With Yali">
+<meta name="twitter:description" content="研究生期间遇到的问题的记录">
 
 
 
@@ -131,7 +129,7 @@
 
   
   
-  <link rel="canonical" href="https://jiyali.github.io/2019/05/26/使用nolup后台运行python脚本/">
+  <link rel="canonical" href="https://jiyali.github.io/archives/2019/10/">
 
 
 
@@ -141,7 +139,7 @@
   };
 </script>
 
-  <title>使用nohup后台运行python脚本 | Coding With Yali</title>
+  <title>归档 | Coding With Yali</title>
   
 
 
@@ -189,7 +187,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-archive">
     <div class="headband"></div>
 	<a href="https://github.com/jiyali" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
@@ -300,7 +298,7 @@
         
         
           
-          <li class="menu-item menu-item-archives">
+          <li class="menu-item menu-item-archives menu-item-active">
 
     
     
@@ -329,6 +327,28 @@
 
   
     
+
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
 
   
 
@@ -375,287 +395,78 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
 
-  
+      
+      <span class="archive-page-counter">
+        
+        
+        
+          
+        
+        嗯..! 目前共计 15 篇日志。 继续努力。
+      </span>
+      
 
-  
-  
-  
+      
 
-  
+        
+        
+        
+
+        
+          
+          <div class="collection-title">
+            <h1 class="archive-year" id="archive-year-2019">2019</h1>
+          </div>
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://jiyali.github.io/2019/05/26/使用nolup后台运行python脚本/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="JiYali">
-      <meta itemprop="description" content="研究生期间遇到的问题的记录">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Coding With Yali">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+          <a class="post-title-link" href="/2019/10/12/破解pycharm/" itemprop="url">
+            
+              <span itemprop="name">破解pycharm</span>
+            
+          </a>
         
-          <h1 class="post-title" itemprop="name headline">使用nohup后台运行python脚本
+      </h2>
 
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-05-26 17:47:42" itemprop="dateCreated datePublished" datetime="2019-05-26T17:47:42+08:00">2019-05-26</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-05-30 16:01:44" itemprop="dateModified" datetime="2019-05-30T16:01:44+08:00">2019-05-30</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/05/26/使用nolup后台运行python脚本/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/26/使用nolup后台运行python脚本/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-            <span class="post-meta-divider">|</span>
-            <span class="post-meta-item-icon">
-            <i class="fa fa-eye"></i>
-             阅读次数： 
-            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
-            </span>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>本地连接服务器训练一个机器学习或者深度学习模型的时候，需要花很长时间才能训练出一个结果，但是在这个过程中本地的ssh连接很容易就断开了，这时在服务器上跑的程序也就跟着断掉了，这个时候就非常非常需要后台运行训练程序。</p>
-<p>先记录一下使用nohup解决这个问题的过程</p>
-<ul>
-<li>因为服务器多人在使用，所以在进入正题之前还是需要先激活环境：source 环境名/bin/activate</li>
-<li>打开程序所在文件夹：cd 某文件夹</li>
-</ul>
-<p>接下来进入正题，使用nohup：</p>
-<ul>
-<li>在上述步骤结束之后，继续输入：<code>nohup python -u 程序名.py &gt; /日志路径 日志名.log 2&gt;&amp;1 &amp;</code></li>
-</ul>
-<p>验证程序是否已经在后台运行</p>
-<ul>
-<li>成功之后，关闭当前终端</li>
-<li>打开新的终端，ssh命令连接服务器</li>
-<li>输入 <code>ps -aux|grep 程序名.py</code> ，就能看到正在运行的程序啦</li>
-</ul>
-<p>训练完毕后杀死进程</p>
-<ul>
-<li>在执行 <code>ps -aux|grep 程序名.py</code> 的时候，我们可以看到第二列是程序运行的ID，记下ID号码</li>
-<li>命令行输入 <code>kill -9 ID号</code> ，就可以杀死进程啦</li>
-</ul>
-<p>训练完成后想看程序中关于 <code>print</code> 的输出，只要打开自定义的目录文件下的 <code>目录.log</code> 就可以查看啦~</p>
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-      <div>
-        <div id="reward-container">
-  <div>would you buy me a coffee☕~</div>
-  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    打赏
-  </button>
-  <div id="qr" style="display: none;">
-
-    
-      
-      
-        
-      
-      <div style="display: inline-block">
-        <img src="/images/wechat.png" alt="JiYali 微信支付">
-        <p>微信支付</p>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-10-12T19:05:42+08:00" content="2019-10-12">
+          10-12
+        </time>
       </div>
-    
 
-  </div>
-</div>
-
-      </div>
-    
-
-    
-      <div>
-        
-
-
-
-
-  
-
-
-
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>本文作者： </strong>JiYali</li>
-  <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    
-    <a href="https://jiyali.github.io/2019/05/26/使用nolup后台运行python脚本/" title="使用nohup后台运行python脚本">https://jiyali.github.io/2019/05/26/使用nolup后台运行python脚本/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
-</ul>
-
-      </div>
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/深度学习/" rel="tag"># 深度学习</a>
-          
-            <a href="/tags/服务器/" rel="tag"># 服务器</a>
-          
-            <a href="/tags/nohup/" rel="tag"># nohup</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/05/26/ubuntu常用指令集合/" rel="next" title="ubuntu常用指令集合(持续更新中✧(≖ ◡ ≖✿)">
-                <i class="fa fa-chevron-left"></i> ubuntu常用指令集合(持续更新中✧(≖ ◡ ≖✿)
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/30/ubuntu16-04-google-shadowsocks-科学上网配置教程/" rel="prev" title="ubuntu16.04+google+shadowsocks 科学上网配置教程 ">
-                ubuntu16.04+google+shadowsocks 科学上网配置教程  <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
+
+      
+
+    </div>
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
           
-
-  
-    <div class="comments" id="comments">
-    </div>
-
-  
-
-
 
         </div>
         
@@ -973,10 +784,6 @@
 
 
   
-  <script src="/js/scrollspy.js?v=7.1.0"></script>
-<script src="/js/post-details.js?v=7.1.0"></script>
-
-
 
   
 
@@ -1022,8 +829,6 @@
 
 
 
-
-  
 
 
   

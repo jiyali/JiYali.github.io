@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[破解pycharm]]></title>
+    <url>%2F2019%2F10%2F12%2F%E7%A0%B4%E8%A7%A3pycharm%2F</url>
+    <content type="text"><![CDATA[有效期到2100年1月1日！有效期 第一步：下载补丁文件链接,提取码：sa44。文件中根据不同版本的pycharm选择不同版本的JetbrainsCrack。 第二步：配置补丁文件 将下载好的文件放到安装目录的bin文件夹下，比如我的是C:\Program Files\JetBrains\PyCharm 2018.3.5\bin 笔记本格式打开bin文件夹下 pycharm.exe.vmoptions、pycharm64.exe.vmoptions，在这两个文件夹最后一行添加 -javaagent:文件目录\补丁名,比如我的是-javaagent:C:\Program Files\JetBrains\PyCharm 2018.3.5\bin\JetbrainsCrack-4.2-release-enc.jar，修改完后保存 第三步：修改host文件 找到C:\Windows\System32\drivers文件夹下的host文件，笔记本格式打开 在最后一行添加如下内容，修改后保存 120.0.0.0 account.jetbrains.com0.0.0.0 www.jetbrains.com 第四步：添加激活码 激活方式选择 Activation code 输入如下的激活码 123456789101112131415161718192021222324ThisCrackLicenseId-&#123; “licenseId”:“11011”, “licenseeName”:“微信公众号”, “assigneeName”:“裸睡的猪”, “assigneeEmail”:“1113449881@qq.com”, “licenseRestriction”:“”, “checkConcurrentUse”:false, “products”:[ &#123; “code”:“II”,“paidUpTo”:“2099-12-31”&#125;, &#123; “code”:“DM”,“paidUpTo”:“2099-12-31”&#125;, &#123; “code”:“AC”,“paidUpTo”:“2099-12-31”&#125;, &#123; “code”:“RS0”,“paidUpTo”:“2099-12-31”&#125;, &#123; “code”:“WS”,“paidUpTo”:“2099-12-31”&#125;, &#123; “code”:“DPN”,“paidUpTo”:“2099-12-31”&#125;, &#123; “code”:“RC”,“paidUpTo”:“2099-12-31”&#125;, &#123; “code”:“PS”,“paidUpTo”:“2099-12-31”&#125;, &#123; “code”:“DC”,“paidUpTo”:“2099-12-31”&#125;, &#123; “code”:“RM”,“paidUpTo”:“2099-12-31”&#125;, &#123; “code”:“CL”,“paidUpTo”:“2099-12-31”&#125;, &#123; “code”:“PC”,“paidUpTo”:“2099-12-31”&#125; ], “hash”:“2911276/0”, “gracePeriodDays”:7, “autoProlongated”:false&#125; 点击 OK，激活完成 参考链接：pyCharm最新2018激活码]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[数据结构记录]]></title>
     <url>%2F2019%2F09%2F21%2F%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%AE%B0%E5%BD%95%2F</url>
     <content type="text"></content>
