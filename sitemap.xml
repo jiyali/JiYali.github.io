@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jiyali.github.io/2019/04/15/hexo-next-%E9%83%A8%E7%BD%B2%E5%90%84%E7%A7%8D%E7%82%AB%E9%85%B7%E5%8D%9A%E5%AE%A2%E7%89%B9%E6%95%88/</loc>
+    <loc>https://jiyali.github.io/about/index.html</loc>
     
-    <lastmod>2019-10-15T06:39:25.300Z</lastmod>
+    <lastmod>2019-10-15T07:46:32.377Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jiyali.github.io/summary/index.html</loc>
     
-    <lastmod>2019-10-15T05:21:35.560Z</lastmod>
+    <lastmod>2019-10-15T07:04:46.601Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jiyali.github.io/2019/04/15/hexo-next-%E9%83%A8%E7%BD%B2%E5%90%84%E7%A7%8D%E7%82%AB%E9%85%B7%E5%8D%9A%E5%AE%A2%E7%89%B9%E6%95%88/</loc>
+    
+    <lastmod>2019-10-15T06:39:25.300Z</lastmod>
     
   </url>
   
@@ -117,13 +124,6 @@
     <loc>https://jiyali.github.io/2019/04/14/%E4%BD%BF%E7%94%A8Valine-js%E6%B7%BB%E5%8A%A0%E7%95%99%E8%A8%80%E6%9D%BF%E5%8A%9F%E8%83%BD/</loc>
     
     <lastmod>2019-05-30T07:56:55.419Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jiyali.github.io/about/index.html</loc>
-    
-    <lastmod>2019-04-12T10:06:41.880Z</lastmod>
     
   </url>
   
