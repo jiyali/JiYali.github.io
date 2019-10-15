@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jiyali.github.io/summary/index.html</loc>
+    
+    <lastmod>2019-10-15T05:21:35.560Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jiyali.github.io/2019/10/12/%E7%A0%B4%E8%A7%A3pycharm/</loc>
     
-    <lastmod>2019-10-12T11:40:05.988Z</lastmod>
+    <lastmod>2019-10-12T11:42:29.335Z</lastmod>
     
   </url>
   
@@ -40,13 +47,6 @@
     <loc>https://jiyali.github.io/2019/05/17/%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
     
     <lastmod>2019-09-21T09:39:35.603Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jiyali.github.io/2019/09/21/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%AE%B0%E5%BD%95/</loc>
-    
-    <lastmod>2019-09-21T09:38:39.495Z</lastmod>
     
   </url>
   

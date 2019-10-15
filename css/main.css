@@ -1216,6 +1216,13 @@ pre .javascript .function {
 .use-motion .menu-item {
   opacity: 0;
 }
+.header {
+  background-image: url("/images/header.jpg");
+  background-size: 100% 100%;
+}
+.header-inner {
+  position: relative;
+}
 .post-body {
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -1853,7 +1860,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff54da;
+  background: #4b50d7;
 }
 .feed-link,
 .chat {
@@ -2575,4 +2582,11 @@ embed {
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+@font-face {
+  font-family: ActionJackson;
+}
+.site-title {
+  font-size: 40px;
+  font-family: 'ActionJackson';
 }
