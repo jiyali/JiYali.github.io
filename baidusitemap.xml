@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://jiyali.github.io/2019/04/15/hexo-next-%E9%83%A8%E7%BD%B2%E5%90%84%E7%A7%8D%E7%82%AB%E9%85%B7%E5%8D%9A%E5%AE%A2%E7%89%B9%E6%95%88/</loc>
+    <lastmod>2019-10-15</lastmod>
+  </url>  <url>
     <loc>https://jiyali.github.io/2019/10/12/%E7%A0%B4%E8%A7%A3pycharm/</loc>
     <lastmod>2019-10-12</lastmod>
   </url>  <url>
@@ -29,9 +32,6 @@
     <lastmod>2019-05-30</lastmod>
   </url>  <url>
     <loc>https://jiyali.github.io/2019/05/26/%E4%BD%BF%E7%94%A8nolup%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8Cpython%E8%84%9A%E6%9C%AC/</loc>
-    <lastmod>2019-05-30</lastmod>
-  </url>  <url>
-    <loc>https://jiyali.github.io/2019/04/15/hexo-next-%E9%83%A8%E7%BD%B2%E5%90%84%E7%A7%8D%E7%82%AB%E9%85%B7%E5%8D%9A%E5%AE%A2%E7%89%B9%E6%95%88/</loc>
     <lastmod>2019-05-30</lastmod>
   </url>  <url>
     <loc>https://jiyali.github.io/2019/05/30/ubuntu16-04-google-shadowsocks-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/</loc>
