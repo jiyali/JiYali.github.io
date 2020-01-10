@@ -136,7 +136,7 @@
 <meta property="og:image" content="https://jiyali.github.io/2019/05/17/远程服务器使用教程/路径.png">
 <meta property="og:image" content="https://jiyali.github.io/2019/05/17/远程服务器使用教程/连接.png">
 <meta property="og:image" content="https://jiyali.github.io/2019/05/17/远程服务器使用教程/激活环境.png">
-<meta property="og:updated_time" content="2019-09-21T09:39:35.603Z">
+<meta property="og:updated_time" content="2020-01-05T11:45:37.688Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="远程服务器使用教程">
 <meta name="twitter:description" content="服务器上面的配置因为我没有机会亲自配置过，所以这里只对连接和使用服务器的各种步骤进行学习和记录。首先在服务器上搭建自己的环境，避免安装各种程序需要的包时发生冲突 设置虚拟环境这里可以选择python的版本等，比如说我需要的是python3.5版本的环境，设置步骤如下：  首先去确定服务器上面存在的python版本，在终端运行 cd /usr/bin -&amp;gt; 输入 ls -&amp;gt; 查看是否存在">
@@ -469,7 +469,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-09-21 17:39:35" itemprop="dateModified" datetime="2019-09-21T17:39:35+08:00">2019-09-21</time>
+                <time title="修改时间：2020-01-05 19:45:37" itemprop="dateModified" datetime="2020-01-05T19:45:37+08:00">2020-01-05</time>
               
             
           </span>
@@ -527,7 +527,7 @@
 <h2 id="设置虚拟环境"><a href="#设置虚拟环境" class="headerlink" title="设置虚拟环境"></a>设置虚拟环境</h2><p>这里可以选择python的版本等，比如说我需要的是python3.5版本的环境，设置步骤如下：</p>
 <ul>
 <li>首先去确定服务器上面存在的python版本，在终端运行 <code>cd /usr/bin</code> -&gt; 输入 <code>ls</code> -&gt; 查看是否存在需要的pyhon版本，如果存在，进行下一步，如果不存在，自行百度啦~</li>
-<li>创建 <code>virtualenv -p python35 py35</code></li>
+<li>创建 <code>virtualenv -p /usr/bin/python3.5 py35</code></li>
 <li>激活 <code>source py35/bin/activate</code></li>
 <li><p>安装包 比如 <code>pip3 install -i https://pypi.mirrors.ustc.edu.cn/simple tensorflow==1.10.0</code>,<br>直接 <code>pip install + 包名</code> 也是可以的 但是会很慢，这里的 <code>https://pypi.mirrors.ustc.edu.cn/simple</code>是使用了国内的镜像，这里列一下国内的一些源：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">清华：https://pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line"></span><br><span class="line">阿里云：http://mirrors.aliyun.com/pypi/simple</span><br><span class="line"></span><br><span class="line">中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple</span><br><span class="line"></span><br><span class="line">华中理工大学：http://pypi.hustunique.com</span><br><span class="line"></span><br><span class="line">山东理工大学：http://pypi.sdutlinux.org</span><br><span class="line"></span><br><span class="line">豆瓣：http://pypi.douban.com/simple</span><br><span class="line"></span><br><span class="line">note：新版ubuntu要求使用https源，要注意。</span><br><span class="line"></span><br><span class="line">使用时直接在命令行输入 <span class="string">'pip -i 源地址'</span></span><br></pre></td></tr></table></figure>
@@ -745,7 +745,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-count">19</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -808,7 +808,15 @@
                     
                       
                     
-                    <span class="site-state-item-count">22</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">26</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -900,7 +908,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="animate">
     <i class="fa fa-fas fa-heartbeat"></i>
   </span>
@@ -1416,48 +1424,7 @@
         onPopupClose();
       }
     });
-  </script>
-
-
-
-
-
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>
@@ -1474,5 +1441,46 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
 </script>
 <!-- End: Injected MathJax -->
-<!-- hexo-inject:end --></body>
+<!-- hexo-inject:end -->
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
 </html>
